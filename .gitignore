@@ -1,0 +1,25 @@
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Python / Odoo addon build artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secrets and credentials — never commit
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
