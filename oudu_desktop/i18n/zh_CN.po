@@ -1,0 +1,148 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oudu_desktop
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"PO-Revision-Date: 2026-08-25 00:00+0000\n"
+"Last-Translator: Oudu Software\n"
+"Language-Team: Chinese (Simplified)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Oudu Desktop"
+msgstr "Oudu Desktop"
+
+#. module: oudu_desktop
+#: model:ir.model.fields,field_description:oudu_desktop.field_res_config_settings__oudu_desktop_report_policy
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Report Print Policy"
+msgstr "报表打印策略"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "How the Oudu Desktop client handles report printing from this instance."
+msgstr "Oudu Desktop 客户端处理此实例报表打印的方式。"
+
+#. module: oudu_desktop
+#: model:ir.model.fields.selection,name:oudu_desktop.selection__res_config_settings__oudu_desktop_file_policy__default
+#: model:ir.model.fields.selection,name:oudu_desktop.selection__res_config_settings__oudu_desktop_report_policy__default
+msgid "Desktop default"
+msgstr "桌面端默认"
+
+#. module: oudu_desktop
+#: model:ir.model.fields.selection,name:oudu_desktop.selection__res_config_settings__oudu_desktop_report_policy__passthrough
+msgid "Do not intercept (native download)"
+msgstr "不接管（原生下载）"
+
+#. module: oudu_desktop
+#: model:ir.model.fields.selection,name:oudu_desktop.selection__res_config_settings__oudu_desktop_report_policy__silent
+msgid "Silent to default printer"
+msgstr "静默打印到默认打印机"
+
+#. module: oudu_desktop
+#: model:ir.model.fields,field_description:oudu_desktop.field_res_config_settings__oudu_desktop_file_policy
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "File Upload Policy"
+msgstr "文件上传策略"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Whether the Oudu Desktop client takes over file uploads on this instance."
+msgstr "Oudu Desktop 客户端是否接管此实例的文件上传。"
+
+#. module: oudu_desktop
+#: model:ir.model.fields.selection,name:oudu_desktop.selection__res_config_settings__oudu_desktop_file_policy__passthrough
+msgid "Do not intercept (native picker)"
+msgstr "不接管（原生选择器）"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Hidden Upload Sources"
+msgstr "隐藏的上传来源"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Checked sources are hidden from the desktop upload source picker. If all sources are checked, the native picker remains available."
+msgstr "勾选的来源将不显示在桌面端上传来源选择器中。若全部勾选，仍可使用原生选择器。"
+
+#. module: oudu_desktop
+#: model:ir.model.fields,field_description:oudu_desktop.field_res_config_settings__oudu_desktop_hide_source_local
+msgid "Local files"
+msgstr "本地文件"
+
+#. module: oudu_desktop
+#: model:ir.model.fields,field_description:oudu_desktop.field_res_config_settings__oudu_desktop_hide_source_clipboard
+msgid "Clipboard files"
+msgstr "剪贴板文件"
+
+#. module: oudu_desktop
+#: model:ir.model.fields,field_description:oudu_desktop.field_res_config_settings__oudu_desktop_hide_source_screenshot
+msgid "Screenshot"
+msgstr "截图"
+
+#. module: oudu_desktop
+#: model:ir.model.fields,field_description:oudu_desktop.field_res_config_settings__oudu_desktop_hide_source_camera
+msgid "Camera"
+msgstr "相机"
+
+#. module: oudu_desktop
+#: model:ir.model.fields,field_description:oudu_desktop.field_res_config_settings__oudu_desktop_hide_source_scanner
+msgid "Scanner"
+msgstr "扫描仪"
+
+#. module: oudu_desktop
+#: model:ir.model.fields,field_description:oudu_desktop.field_res_config_settings__oudu_desktop_hide_source_microphone
+msgid "Microphone"
+msgstr "麦克风"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Connect this Odoo instance to the Oudu Desktop native client."
+msgstr "将此 Odoo 实例连接到 Oudu Desktop 原生客户端。"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Oudu Desktop product overview"
+msgstr "Oudu Desktop 产品概览"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Odoo, made native on your desktop."
+msgstr "让 Odoo 真正融入你的桌面。"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Work across multiple Odoo accounts, print reports directly and use local files and devices without leaving your desktop."
+msgstr "在桌面上同时处理多个 Odoo 账户，直接打印报表，并使用本地文件与设备。"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Connected to Oudu Desktop"
+msgstr "已连接 Oudu Desktop"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Native desktop capabilities are enabled for this instance."
+msgstr "此实例的原生桌面能力已启用。"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Not opened in Oudu Desktop"
+msgstr "尚未在 Oudu Desktop 中打开"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "You can keep using Odoo in the browser. Open this instance in the free Oudu Desktop client to use multi-instance workspaces, direct report printing and local device access."
+msgstr "你仍可继续使用浏览器；在免费的 Oudu Desktop 客户端中打开此实例，即可使用多实例工作区、报表直接打印与本地设备能力。"
+
+#. module: oudu_desktop
+#: model_terms:ir.ui.view,arch_db:oudu_desktop.res_config_settings_view_form
+msgid "Get Oudu Desktop"
+msgstr "获取 Oudu Desktop"

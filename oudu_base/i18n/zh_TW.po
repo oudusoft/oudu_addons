@@ -1,0 +1,73 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oudu_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"PO-Revision-Date: 2026-08-25 00:00+0000\n"
+"Last-Translator: Oudu Software\n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: oudu_base
+#: model_terms:ir.ui.view,arch_db:oudu_base.res_config_settings_view_form
+msgid "Oudu Software"
+msgstr "歐度軟體"
+
+#. module: oudu_base
+#: model_terms:ir.ui.view,arch_db:oudu_base.res_config_settings_view_form
+msgid "Instance Identity"
+msgstr "實例識別"
+
+#. module: oudu_base
+#: model:ir.model.fields,field_description:oudu_base.field_res_config_settings__oudu_instance_name
+#: model_terms:ir.ui.view,arch_db:oudu_base.res_config_settings_view_form
+msgid "Instance Name"
+msgstr "實例名稱"
+
+#. module: oudu_base
+#: model_terms:ir.ui.view,arch_db:oudu_base.res_config_settings_view_form
+msgid "Shown for this instance across Oudu Software products. Leave empty to let each product use its default name."
+msgstr "在歐度軟體各產品中顯示此實例。留空則由每個產品使用自己的預設名稱。"
+
+#. module: oudu_base
+#: model_terms:ir.ui.view,arch_db:oudu_base.res_config_settings_view_form
+msgid "e.g. Oudu ERP"
+msgstr "例如：歐度 ERP"
+
+#. module: oudu_base
+#: model:ir.model.fields,field_description:oudu_base.field_res_config_settings__oudu_instance_icon
+#: model_terms:ir.ui.view,arch_db:oudu_base.res_config_settings_view_form
+msgid "Instance Icon"
+msgstr "實例圖示"
+
+#. module: oudu_base
+#: model_terms:ir.ui.view,arch_db:oudu_base.res_config_settings_view_form
+msgid "Shown for this instance across Oudu Software products. Use a small square image. Leave empty to let each product use its default icon."
+msgstr "在歐度軟體各產品中顯示此實例。請使用較小的正方形圖片。留空則由每個產品使用自己的預設圖示。"
+
+#. module: oudu_base
+#: model:ir.model.fields,field_description:oudu_base.field_res_config_settings__oudu_instance_color
+#: model_terms:ir.ui.view,arch_db:oudu_base.res_config_settings_view_form
+msgid "Instance Color"
+msgstr "實例顏色"
+
+#. module: oudu_base
+#: model_terms:ir.ui.view,arch_db:oudu_base.res_config_settings_view_form
+msgid "Shown for this instance across Oudu Software products. Leave unset to let each product use its default color."
+msgstr "在歐度軟體各產品中顯示此實例。未設定時由每個產品使用自己的預設顏色。"
+
+#. module: oudu_base
+#: model:ir.model.fields,field_description:oudu_base.field_res_config_settings__oudu_instance_color_clear
+msgid "Clear instance color"
+msgstr "清除實例顏色"
+
+#. module: oudu_base
+#: model:ir.model.fields,help:oudu_base.field_res_config_settings__oudu_instance_color_clear
+msgid "Select to clear the configured instance color, then save."
+msgstr "勾選後儲存，以清除已設定的實例顏色。"
