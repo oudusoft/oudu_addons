@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.oudu_desktop</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="oudu_base.res_config_settings_view_form"/>
+        <field name="priority" eval="120"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='oudu_software']" position="inside">
+                <block title="Oudu Desktop" name="oudu_desktop">
+                    <setting id="oudu_desktop_setting" class="col-lg-12" help="Connect this Odoo instance to the Oudu Desktop native client.">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-12 col-lg-5">
+                                <a href="https://desktop.oudu.top" target="_blank" rel="noopener">
+                                    <img src="/oudu_desktop/static/description/images/product_overview.png" alt="Oudu Desktop product overview" class="img-fluid rounded border d-block" loading="lazy"/>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <div class="h5 mb-2">Odoo, made native on your desktop.</div>
+                                <p class="text-muted mb-3">Work across multiple Odoo accounts, print reports directly and use local files and devices without leaving your desktop.</p>
+                                <div class="oudu_desktop_guide">
+                                    <div class="alert alert-success mb0 oudu_desktop_guide_detected" role="status" hidden="hidden">
+                                        <div class="fw-bold">Connected to Oudu Desktop</div>
+                                        <div>Native desktop capabilities are enabled for this instance.</div>
+                                    </div>
+                                    <div class="alert alert-info mb0 oudu_desktop_guide_not_detected" role="status" hidden="hidden">
+                                        <div class="fw-bold">Not opened in Oudu Desktop</div>
+                                        <div>You can keep using Odoo in the browser. Open this instance in the free Oudu Desktop client to use multi-instance workspaces, direct report printing and local device access.</div>
+                                        <a class="btn btn-primary mt8" href="https://desktop.oudu.top" target="_blank" rel="noopener" role="button">Get Oudu Desktop</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting id="oudu_desktop_report_policy_setting" string="Report Print Policy" help="How the Oudu Desktop client handles report printing from this instance.">
+                        <field name="oudu_desktop_report_policy" widget="radio"/>
+                    </setting>
+                    <setting id="oudu_desktop_file_policy_setting" string="File Upload Policy" help="Whether the Oudu Desktop client takes over file uploads on this instance.">
+                        <field name="oudu_desktop_file_policy" widget="radio"/>
+                    </setting>
+                    <setting id="oudu_desktop_file_sources_setting" string="Hidden Upload Sources" help="Checked sources are hidden from the desktop upload source picker. If all sources are checked, the native picker remains available." invisible="oudu_desktop_file_policy == 'passthrough'">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 d-flex align-items-center gap-2">
+                                <field name="oudu_desktop_hide_source_local" nolabel="1"/>
+                                <label for="oudu_desktop_hide_source_local"/>
+                            </div>
+                            <div class="col-12 col-lg-6 d-flex align-items-center gap-2">
+                                <field name="oudu_desktop_hide_source_clipboard" nolabel="1"/>
+                                <label for="oudu_desktop_hide_source_clipboard"/>
+                            </div>
+                            <div class="col-12 col-lg-6 d-flex align-items-center gap-2">
+                                <field name="oudu_desktop_hide_source_screenshot" nolabel="1"/>
+                                <label for="oudu_desktop_hide_source_screenshot"/>
+                            </div>
+                            <div class="col-12 col-lg-6 d-flex align-items-center gap-2">
+                                <field name="oudu_desktop_hide_source_camera" nolabel="1"/>
+                                <label for="oudu_desktop_hide_source_camera"/>
+                            </div>
+                            <div class="col-12 col-lg-6 d-flex align-items-center gap-2">
+                                <field name="oudu_desktop_hide_source_microphone" nolabel="1"/>
+                                <label for="oudu_desktop_hide_source_microphone"/>
+                            </div>
+                            <div class="col-12 col-lg-6 d-flex align-items-center gap-2">
+                                <field name="oudu_desktop_hide_source_scanner" nolabel="1"/>
+                                <label for="oudu_desktop_hide_source_scanner"/>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>
