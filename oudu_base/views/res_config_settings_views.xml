@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.oudu_base</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='general_settings']" position="after">
+                <app data-string="Oudu Software" string="Oudu Software" name="oudu_software" logo="/oudu_base/static/description/icon.png">
+                    <block title="Instance Identity" name="oudu_base">
+                        <setting id="oudu_instance_name_setting" string="Instance Name" help="Shown for this instance across Oudu Software products. Leave empty to let each product use its default name.">
+                            <field name="oudu_instance_name" placeholder="e.g. Oudu ERP"/>
+                        </setting>
+                        <setting id="oudu_instance_color_setting" string="Instance Color" help="Shown for this instance across Oudu Software products. Leave unset to let each product use its default color.">
+                            <div class="d-flex align-items-center gap-2">
+                                <field name="oudu_instance_color" widget="color"/>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mt8" invisible="not oudu_instance_color">
+                                <field name="oudu_instance_color_clear" nolabel="1"/>
+                                <label for="oudu_instance_color_clear"/>
+                            </div>
+                        </setting>
+                        <setting id="oudu_instance_icon_setting" string="Instance Icon" help="Shown for this instance across Oudu Software products. Use a small square image. Leave empty to let each product use its default icon.">
+                            <field name="oudu_instance_icon" widget="image"/>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>
