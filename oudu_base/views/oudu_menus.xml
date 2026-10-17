@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_oudu_root" name="Oudu" web_icon="oudu_base,static/description/icon.png" groups="base.group_system" sequence="0"/>
+</odoo>
