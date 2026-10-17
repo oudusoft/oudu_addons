@@ -1,0 +1,183 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan">Oudu IoT</h2>
+            <h3 class="oe_slogan">The IoT Box access layer, reduced to a single chip</h3>
+            <p class="oe_mt32 text-center">
+                Oudu IoT is a native Odoo ESP32 edge hardware gateway. It connects
+                scanners, scales, receipt printers and cameras to Odoo through the
+                native IoT Box and ePOS interfaces.
+            </p>
+            <p class="oe_mt16 text-center">
+                <b>The devices work with standard Odoo without any Oudu module.</b>
+                This module is an optional companion for administrators: keep your hosts
+                in one list, test them from the browser and open their gateway pages.
+            </p>
+        </div>
+    </div>
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <img
+                src="images/host_form.png"
+                alt="Oudu IoT host connected in Odoo, with its device snapshot"
+                class="img img-fluid mx-auto d-block rounded"
+            />
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">What this module adds</h3>
+        </div>
+    </div>
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h4>Host list</h4>
+            <p>
+                Keep the Oudu IoT hosts on your local network in one list under
+                Oudu &gt; IoT &gt; Hosts, visible to administrators only. Each row is
+                colored by its last test result.
+            </p>
+        </div>
+        <div class="oe_span6">
+            <h4>Connection test</h4>
+            <p>
+                Once a host is saved with its address, check it from your own browser
+                and record its identity, firmware version, chip and board. Connection
+                tests need Google Chrome or Microsoft Edge.
+            </p>
+        </div>
+    </div>
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h4>Gateway shortcut</h4>
+            <p>
+                After a successful test, open the host's own gateway page (its root
+                address) in one click. Changing the address clears the result until
+                the host is tested again.
+            </p>
+        </div>
+        <div class="oe_span6">
+            <h4>Point of Sale hint</h4>
+            <p>
+                Each host shows where to enter its address in Point of Sale:
+                Configuration &rsaquo; Settings &rsaquo; Connected Devices, as the IoT Box
+                IP Address, or as the ePos Printer Epson Printer IP for receipts only.
+            </p>
+        </div>
+    </div>
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <img
+                src="images/main_screenshot.png"
+                alt="Oudu IoT block in Odoo Settings"
+                class="img img-fluid mx-auto d-block rounded"
+            />
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Get started</h3>
+        </div>
+    </div>
+    <div class="oe_row oe_spaced">
+        <div class="oe_span4">
+            <h4>1. Flash the device</h4>
+            <p>
+                Flash an ESP32 board online at iot.oudu.top/flash/ using desktop
+                Chrome, Edge or Firefox, or download the firmware from iot.oudu.top,
+                then join it to your Wi-Fi from its setup page.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4>2. Add the host</h4>
+            <p>
+                In Oudu &gt; IoT &gt; Hosts, enter the host's .local name or private IP
+                address, save, and run Test connection in Chrome or Edge.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4>3. Use it in Point of Sale</h4>
+            <p>
+                Enter the same address under Connected Devices. Your scanners, scales
+                and receipt printers then work through Odoo's own interfaces.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">More from the Oudu IoT device</h3>
+            <p class="text-center">
+                These features belong to the device itself and need no setting in this
+                module. They are served by the host's own pages on your local network.
+            </p>
+        </div>
+    </div>
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h4 class="text-center">Scanners, scales, printers and cameras</h4>
+            <p class="text-center">
+                Barcode scanners, scales, receipt printers and cameras connect through
+                the interfaces Odoo already speaks, so Point of Sale and other Odoo
+                apps use them natively.
+            </p>
+            <img
+                src="images/devices.png"
+                alt="Oudu IoT gateway page with scanners, a scale, a receipt printer and cameras"
+                class="img img-fluid mx-auto d-block rounded"
+            />
+        </div>
+    </div>
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h4 class="text-center">The host's own gateway page</h4>
+            <p class="text-center">
+                Open gateway takes you to the page served by the device, with its
+                status, network clock, pin configuration, password and firmware update.
+            </p>
+            <img
+                src="images/services.png"
+                alt="Oudu IoT gateway status, network clock and firmware update"
+                class="img img-fluid mx-auto d-block rounded"
+            />
+        </div>
+    </div>
+    <div class="oe_row oe_spaced">
+        <div class="oe_span6">
+            <h4>Wi-Fi setup in the browser</h4>
+            <p>
+                After flashing, choose the Wi-Fi network and enter its password on the
+                host's setup page. The host then joins your local network and can be
+                added to Odoo by its address.
+            </p>
+        </div>
+        <div class="oe_span6">
+            <img
+                src="images/prov_connect.png"
+                alt="Joining an Oudu IoT host to Wi-Fi from its setup page"
+                class="img img-fluid mx-auto d-block rounded"
+            />
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan">Compatibility</h3>
+            <p>
+                Supports Community and Enterprise editions on self-hosted and Odoo.sh
+                deployments for the Odoo series declared by this listing. This module
+                does not depend on, reuse or replace any Enterprise module.
+            </p>
+        </div>
+    </div>
+</section>
