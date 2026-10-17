@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.oudu_base</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="priority" eval="100"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@data-key='general_settings']" position="after">
+                <div class="app_settings_block" data-string="Oudu Software" string="Oudu Software" data-key="oudu_base">
+                    <h2>Instance Identity</h2>
+                    <div class="row mt16 o_settings_container" name="oudu_base">
+                        <div class="col-12 col-lg-6 o_setting_box" id="oudu_instance_name_setting">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane">
+                                <label for="oudu_instance_name"/>
+                                <div class="text-muted">Shown for this instance across Oudu Software products. Leave empty to let each product use its default name.</div>
+                                <div class="content-group">
+                                    <div class="mt16">
+                                        <field name="oudu_instance_name" placeholder="e.g. Oudu ERP"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box" id="oudu_instance_color_setting">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane">
+                                <label for="oudu_instance_color"/>
+                                <div class="text-muted">Shown for this instance across Oudu Software products. Leave unset to let each product use its default color.</div>
+                                <div class="content-group">
+                                    <div class="mt16">
+                                        <field name="oudu_instance_color" widget="color"/>
+                                    </div>
+                                    <div class="mt8" attrs="{'invisible': [('oudu_instance_color', '=', False)]}">
+                                        <field name="oudu_instance_color_clear" class="oe_inline"/>
+                                        <label for="oudu_instance_color_clear"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box" id="oudu_instance_icon_setting">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane">
+                                <label for="oudu_instance_icon"/>
+                                <div class="text-muted">Shown for this instance across Oudu Software products. Use a small square image. Leave empty to let each product use its default icon.</div>
+                                <div class="content-group">
+                                    <div class="mt16">
+                                        <field name="oudu_instance_icon" widget="image"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
