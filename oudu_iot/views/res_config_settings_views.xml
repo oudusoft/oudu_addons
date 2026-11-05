@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.oudu_iot</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="oudu_base.res_config_settings_view_form"/>
+        <field name="priority" eval="160"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='oudu_software']" position="inside">
+                <block title="Oudu IoT" name="oudu_iot">
+                    <setting id="oudu_iot_setting" class="col-lg-12" help="Register Oudu IoT hosts on your local network and test them from this browser.">
+                        <div class="row g-3 align-items-center">
+                            <div class="col-12 col-lg-5">
+                                <a href="https://iot.oudu.top" target="_blank" rel="noopener">
+                                    <img src="/oudu_iot/static/description/images/product_overview.png" alt="Oudu IoT product overview" class="img-fluid rounded border d-block" loading="lazy"/>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-7">
+                                <div class="h5 mb-2">Native Odoo ESP32 edge hardware gateway</div>
+                                <p class="text-muted mb-3">Connect scanners, scales, receipt printers and cameras to standard Odoo through the native IoT Box and ePOS interfaces. Devices work without this module; it adds a host list, connection tests and gateway shortcuts.</p>
+                                <div class="mb-3">
+                                    <a class="btn btn-primary" href="https://iot.oudu.top" target="_blank" rel="noopener" role="button">Get firmware</a>
+                                    <a class="btn btn-secondary" href="https://iot.oudu.top/flash/" target="_blank" rel="noopener" role="button">Flash online</a>
+                                    <button name="%(oudu_iot.action_oudu_iot_hosts)d" type="action" string="Manage hosts" class="btn btn-link"/>
+                                </div>
+                                <p class="text-muted small mb-1">Online flashing needs desktop Chrome, Edge or Firefox. Connection tests need Chrome or Edge.</p>
+                                <p class="text-muted small mb-0">Point of Sale: under Configuration › Settings › Connected Devices, enable IoT Box and enter an Oudu IoT host's address as its IP Address to use scanners, scales and receipt printing, or enable ePos Printer and enter it as the Epson Printer IP for receipts only. No Oudu module is required for this.</p>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

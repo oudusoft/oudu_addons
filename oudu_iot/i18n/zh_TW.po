@@ -1,0 +1,234 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* oudu_iot
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"PO-Revision-Date: 2026-10-16 00:00+0000\n"
+"Last-Translator: Oudu Software\n"
+"Language-Team: Chinese (Traditional)\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Oudu IoT"
+msgstr "Oudu IoT"
+
+#. module: oudu_iot
+#: model:ir.ui.menu,name:oudu_iot.menu_oudu_iot
+msgid "IoT"
+msgstr "IoT"
+
+#. module: oudu_iot
+#: model:ir.ui.menu,name:oudu_iot.menu_oudu_iot_hosts
+msgid "Hosts"
+msgstr "主機"
+
+#. module: oudu_iot
+#: model:ir.actions.act_window,name:oudu_iot.action_oudu_iot_hosts
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_list_iot
+msgid "IoT Hosts"
+msgstr "IoT 主機"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "IoT Host"
+msgstr "IoT 主機"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "Test connection"
+msgstr "測試連線"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "Open gateway"
+msgstr "開啟閘道"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Manage hosts"
+msgstr "管理主機"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Get firmware"
+msgstr "取得韌體"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Flash online"
+msgstr "線上燒錄"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "Save this host before testing."
+msgstr "請先儲存此主機再測試。"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "Enter the host address and save first."
+msgstr "請先填寫主機位址並儲存。"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "Odoo did not answer. Reload the page and try again."
+msgstr "Odoo 沒有回應，請重新整理頁面後再試。"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "e.g. Front counter"
+msgstr "例如：前台收銀"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "e.g. oudu-iot-1a2b3c4d.local"
+msgstr "例如：oudu-iot-1a2b3c4d.local"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "Connection"
+msgstr "連線"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "Last test"
+msgstr "最後測試"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "Device snapshot"
+msgstr "裝置快照"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.oudu_host_view_form_iot
+msgid "Point of Sale: under Configuration › Settings › Connected Devices, enable IoT Box and enter this host's address as its IP Address to use scanners, scales and receipt printing, or enable ePos Printer and enter it as the Epson Printer IP for receipts only. No Oudu module is required for this."
+msgstr "POS營業點：在「配置」›「設定」›「連接設備」中啟用「IoT 盒子」並將此主機的位址填入「IP 位址」，即可使用掃碼槍、電子秤與收據列印；或啟用「ePOS打印機」並填入「Epson 印表機 IP」，僅用於收據。無需任何 Oudu 模組。"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Point of Sale: under Configuration › Settings › Connected Devices, enable IoT Box and enter an Oudu IoT host's address as its IP Address to use scanners, scales and receipt printing, or enable ePos Printer and enter it as the Epson Printer IP for receipts only. No Oudu module is required for this."
+msgstr "POS營業點：在「配置」›「設定」›「連接設備」中啟用「IoT 盒子」並將 Oudu IoT 主機的位址填入「IP 位址」，即可使用掃碼槍、電子秤與收據列印；或啟用「ePOS打印機」並填入「Epson 印表機 IP」，僅用於收據。無需任何 Oudu 模組。"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Register Oudu IoT hosts on your local network and test them from this browser."
+msgstr "登記區域網路內的 Oudu IoT 主機，並在此瀏覽器中測試連線。"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Oudu IoT product overview"
+msgstr "Oudu IoT 產品概覽"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Native Odoo ESP32 edge hardware gateway"
+msgstr "原生 Odoo ESP32 邊緣硬體閘道"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Connect scanners, scales, receipt printers and cameras to standard Odoo through the native IoT Box and ePOS interfaces. Devices work without this module; it adds a host list, connection tests and gateway shortcuts."
+msgstr "透過原生 IoT Box 與 ePOS 介面，將掃碼槍、電子秤、收據印表機和攝影機接入標準 Odoo。裝置無需本模組即可使用；本模組提供主機清單、連線測試與閘道入口。"
+
+#. module: oudu_iot
+#: model_terms:ir.ui.view,arch_db:oudu_iot.res_config_settings_view_form
+msgid "Online flashing needs desktop Chrome, Edge or Firefox. Connection tests need Chrome or Edge."
+msgstr "線上燒錄需使用桌面版 Chrome、Edge 或 Firefox；連線測試需使用 Chrome 或 Edge。"
+
+#. module: oudu_iot
+#: model:ir.model.fields,field_description:oudu_iot.field_oudu_host__iot_chip
+msgid "Chip"
+msgstr "晶片"
+
+#. module: oudu_iot
+#: model:ir.model.fields,field_description:oudu_iot.field_oudu_host__iot_chip_rev
+msgid "Chip Revision"
+msgstr "晶片修訂版"
+
+#. module: oudu_iot
+#: model:ir.model.fields,field_description:oudu_iot.field_oudu_host__iot_board
+msgid "Board"
+msgstr "板型"
+
+#. module: oudu_iot
+#: model:ir.model.fields,field_description:oudu_iot.field_oudu_host__iot_compat_identifier
+msgid "Compatibility Identifier"
+msgstr "相容識別碼"
+
+#. module: oudu_iot
+#: model:ir.model.fields,field_description:oudu_iot.field_oudu_host__iot_last_test_status
+msgid "Last Test Result"
+msgstr "最後測試結果"
+
+#. module: oudu_iot
+#: model:ir.model.fields,field_description:oudu_iot.field_oudu_host__iot_last_test_detail
+msgid "Last Test Detail"
+msgstr "最後測試詳情"
+
+#. module: oudu_iot
+#: model:ir.model.fields.selection,name:oudu_iot.selection__oudu_host__iot_last_test_status__ok
+msgid "Connected"
+msgstr "已連線"
+
+#. module: oudu_iot
+#: model:ir.model.fields.selection,name:oudu_iot.selection__oudu_host__iot_last_test_status__duplicate
+msgid "Already registered as another host"
+msgstr "已登記為其他主機"
+
+#. module: oudu_iot
+#: model:ir.model.fields.selection,name:oudu_iot.selection__oudu_host__iot_last_test_status__device_error
+msgid "Device reported an error"
+msgstr "裝置回報錯誤"
+
+#. module: oudu_iot
+#: model:ir.model.fields.selection,name:oudu_iot.selection__oudu_host__iot_last_test_status__not_oudu
+msgid "Not an Oudu IoT device"
+msgstr "不是 Oudu IoT 裝置"
+
+#. module: oudu_iot
+#: model:ir.model.fields.selection,name:oudu_iot.selection__oudu_host__iot_last_test_status__unreachable
+msgid "No response: check the address and network; if a .local name fails, try the IP address"
+msgstr "無回應：請檢查位址與網路；.local 主機名稱不通時請改用 IP 位址"
+
+#. module: oudu_iot
+#: model:ir.model.fields.selection,name:oudu_iot.selection__oudu_host__iot_last_test_status__blocked
+msgid "Blocked by the browser: allow local network access for this site"
+msgstr "被瀏覽器攔截：請允許此網站存取區域網路"
+
+#. module: oudu_iot
+#: model:ir.model.fields.selection,name:oudu_iot.selection__oudu_host__iot_last_test_status__unsupported_browser
+msgid "Browser not supported: use Chrome or Edge"
+msgstr "瀏覽器不支援：請使用 Chrome 或 Edge"
+
+#. module: oudu_iot
+#, python-format
+#: code:addons/oudu_iot/models/host.py:0
+msgid "Use a .local host name or a private IPv4 address, without port or http://."
+msgstr "請填寫 .local 主機名稱或私有 IPv4 位址，不要帶連接埠或 http://。"
+
+#. module: oudu_iot
+#, python-format
+#: code:addons/oudu_iot/models/host.py:0
+msgid "Only IoT hosts can be tested."
+msgstr "只能測試 IoT 主機。"
+
+#. module: oudu_iot
+#, python-format
+#: code:addons/oudu_iot/models/host.py:0
+msgid "Unknown connection test result."
+msgstr "未知的連線測試結果。"
+
+#. module: oudu_iot
+#: code:addons/oudu_iot/models/host.py:0
+msgid "Enter a valid host address and save first."
+msgstr "請填寫有效的主機位址並先儲存。"
+
+#. module: oudu_iot
+#: code:addons/oudu_iot/models/host.py:0
+msgid "Reload the page and try again: the connection test runs in your browser."
+msgstr "請重新整理頁面後再試：連線測試在瀏覽器中執行。"
