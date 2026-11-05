@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="oudu_host_view_form_iot_states" model="ir.ui.view">
+        <field name="name">oudu.host.form.oudu_iot.states</field>
+        <field name="model">oudu.host</field>
+        <field name="inherit_id" ref="oudu_host_view_form_iot"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_iot_test']" position="attributes">
+                <attribute name="icon">fa-plug</attribute>
+                <attribute name="attrs">{'invisible': ['|', ('id', '=', False), ('address', '=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//button[@name='action_iot_gateway']" position="attributes">
+                <attribute name="icon">fa-external-link</attribute>
+                <attribute name="attrs">{'invisible': [('last_test_ok', '=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//field[@name='iot_last_test_detail']" position="attributes">
+                <attribute name="attrs">{'invisible': [('iot_last_test_detail', '=', False)]}</attribute>
+            </xpath>
+            <xpath expr="//group[@name='iot_snapshot']" position="attributes">
+                <attribute name="attrs">{'invisible': [('uuid', '=', False)]}</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
