@@ -1,0 +1,20 @@
+{
+    "name": "Oudu Instance Identity",
+    "summary": "Shared instance identity and capability foundation for Oudu modules",
+    "version": "20.0.1.4",
+    "sequence": -1000,
+    "category": "Extra Tools",
+    "author": "Oudu Software",
+    "website": "https://oudu.top",
+    "support": "info@oudu.top",
+    "license": "LGPL-3",
+    "depends": ["base", "base_setup", "web"],
+    "data": [
+        "security/ir.access.csv",
+        "views/res_config_settings_views.xml",
+        "views/oudu_menus.xml",
+    ],
+    "images": ["static/description/banner.png"],
+    "installable": True,
+    "application": True,
+}
